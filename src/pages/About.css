@@ -1,0 +1,145 @@
+.about {
+  padding: 40px 0 0;
+}
+
+.about__title {
+  margin: 0 0 24px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.about__text {
+  max-width: 760px;
+}
+
+.about__text p {
+  margin: 0 0 16px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.about__text .about__demo {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.about__subtitle {
+  margin: 48px 0 24px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* Шаги */
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.steps__item {
+  padding: 24px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.steps__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-subtle);
+  color: var(--accent);
+}
+
+.steps__number {
+  display: block;
+  margin-top: 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.steps__item h3 {
+  margin: 4px 0 8px;
+  font-size: 18px;
+}
+
+.steps__item p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Цифры */
+.stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 48px 0 0;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 24px;
+  text-align: center;
+  background: var(--surface-sunken);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.stats__item dd {
+  margin: 0;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.stats__item dt {
+  color: var(--text-muted);
+}
+
+.about__note {
+  margin: 12px 0 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.about__cta {
+  margin-top: 40px;
+}
+
+.about__button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (min-width: 640px) {
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .about__title {
+    font-size: 44px;
+  }
+
+  .steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

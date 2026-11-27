@@ -1,0 +1,202 @@
+.catalog {
+  padding: 32px 0 0;
+}
+
+.catalog__layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Кнопка «Фильтры» — только на мобильных и планшетах */
+.catalog__filters-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-raised);
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.catalog__filters-toggle:hover {
+  background: var(--surface-overlay);
+}
+
+.catalog__filters-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Фильтры: на мобильных раскрываются по кнопке */
+.catalog__filters.is-open {
+  display: block;
+}
+
+.catalog__filters {
+  display: none;
+  padding: 20px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.catalog__filters-title {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filter:last-child {
+  margin-bottom: 0;
+}
+
+.filter label,
+.filter__label {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.filter input,
+.filter select {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--surface-base);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.filter input:focus,
+.filter select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.filter__range {
+  display: flex;
+  gap: 8px;
+}
+
+/* Список */
+.catalog__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-bottom: 20px;
+}
+
+.catalog__title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.catalog__count {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .catalog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog__layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .catalog__filters-toggle {
+    display: none;
+  }
+
+  .catalog__filters {
+    display: block;
+    flex: 0 0 280px;
+    position: sticky;
+    top: 16px;
+  }
+
+  .catalog__content {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .catalog__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Кнопка сброса (вторичная, не конкурирует с основной CTA) */
+.catalog__reset {
+  margin-top: 20px;
+  padding: 10px 16px;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.catalog__reset:hover {
+  background: var(--surface-overlay);
+  color: #fff;
+}
+
+/* Пустой результат */
+.catalog__empty {
+  padding: 48px 24px;
+  text-align: center;
+  background: var(--surface-raised);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.catalog__empty h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.catalog__empty p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.catalog__empty .catalog__reset {
+  width: auto;
+  margin-top: 20px;
+}

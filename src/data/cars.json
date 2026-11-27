@@ -1,0 +1,206 @@
+[
+  {
+    "id": "car-1",
+    "brand": "BMW",
+    "model": "X5",
+    "year": 2022,
+    "price": 8500000,
+    "mileage": 32000,
+    "bodyType": "SUV",
+    "engineType": "petrol",
+    "transmission": "automatic",
+    "drive": "awd",
+    "images": [
+      "/images/cars/car-1.jpg"
+    ],
+    "sellerName": "АвтоДом",
+    "sellerType": "dealer"
+  },
+  {
+    "id": "car-2",
+    "brand": "Audi",
+    "model": "A6",
+    "year": 2021,
+    "price": 5200000,
+    "mileage": 45000,
+    "bodyType": "Sedan",
+    "engineType": "petrol",
+    "transmission": "automatic",
+    "drive": "awd",
+    "images": [
+      "/images/cars/car-2.jpg"
+    ],
+    "sellerName": "Премиум Моторс",
+    "sellerType": "dealer"
+  },
+  {
+    "id": "car-3",
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2020,
+    "price": 2900000,
+    "mileage": 68000,
+    "bodyType": "Sedan",
+    "engineType": "petrol",
+    "transmission": "automatic",
+    "drive": "fwd",
+    "images": [
+      "/images/cars/car-3.jpg"
+    ],
+    "sellerName": "Иван К.",
+    "sellerType": "private"
+  },
+  {
+    "id": "car-4",
+    "brand": "Kia",
+    "model": "Sportage",
+    "year": 2023,
+    "price": 3400000,
+    "mileage": 12000,
+    "bodyType": "SUV",
+    "engineType": "petrol",
+    "transmission": "automatic",
+    "drive": "awd",
+    "images": [
+      "/images/cars/car-4.jpg"
+    ],
+    "sellerName": "Кия Центр",
+    "sellerType": "dealer"
+  },
+  {
+    "id": "car-5",
+    "brand": "Mercedes-Benz",
+    "model": "E-Class",
+    "year": 2021,
+    "price": 6100000,
+    "mileage": 38000,
+    "bodyType": "Sedan",
+    "engineType": "diesel",
+    "transmission": "automatic",
+    "drive": "rwd",
+    "images": [
+      "/images/cars/car-5.jpg"
+    ],
+    "sellerName": "Star Auto",
+    "sellerType": "dealer"
+  },
+  {
+    "id": "car-6",
+    "brand": "Tesla",
+    "model": "Model 3",
+    "year": 2022,
+    "price": 4300000,
+    "mileage": 27000,
+    "bodyType": "Sedan",
+    "engineType": "electric",
+    "transmission": "automatic",
+    "drive": "rwd",
+    "images": [
+      "/images/cars/car-6.jpg"
+    ],
+    "sellerName": "ЭлектроДрайв",
+    "sellerType": "dealer"
+  },
+  {
+    "id": "car-7",
+    "brand": "Mercedes-Benz",
+    "model": "GLE",
+    "year": 2023,
+    "price": 11900000,
+    "mileage": 9000,
+    "bodyType": "SUV",
+    "engineType": "diesel",
+    "transmission": "automatic",
+    "drive": "awd",
+    "images": [
+      "/images/cars/car-7.jpg"
+    ],
+    "sellerName": "Star Auto",
+    "sellerType": "dealer"
+  },
+  {
+    "id": "car-8",
+    "brand": "Hyundai",
+    "model": "Solaris",
+    "year": 2019,
+    "price": 1100000,
+    "mileage": 92000,
+    "bodyType": "Sedan",
+    "engineType": "petrol",
+    "transmission": "manual",
+    "drive": "fwd",
+    "images": [
+      "/images/cars/car-8.jpg"
+    ],
+    "sellerName": "Алексей М.",
+    "sellerType": "private"
+  },
+  {
+    "id": "car-9",
+    "brand": "Lada",
+    "model": "Vesta",
+    "year": 2022,
+    "price": 1250000,
+    "mileage": 41000,
+    "bodyType": "Sedan",
+    "engineType": "petrol",
+    "transmission": "manual",
+    "drive": "fwd",
+    "images": [
+      "/images/cars/car-9.jpg"
+    ],
+    "sellerName": "Лада Север",
+    "sellerType": "dealer"
+  },
+  {
+    "id": "car-10",
+    "brand": "Toyota",
+    "model": "RAV4",
+    "year": 2021,
+    "price": 3600000,
+    "mileage": 54000,
+    "bodyType": "SUV",
+    "engineType": "hybrid",
+    "transmission": "automatic",
+    "drive": "awd",
+    "images": [
+      "/images/cars/car-10.jpg"
+    ],
+    "sellerName": "Тойота Плюс",
+    "sellerType": "dealer"
+  },
+  {
+    "id": "car-11",
+    "brand": "Audi",
+    "model": "A3",
+    "year": 2020,
+    "price": 2700000,
+    "mileage": 61000,
+    "bodyType": "Hatchback",
+    "engineType": "petrol",
+    "transmission": "automatic",
+    "drive": "fwd",
+    "images": [
+      "/images/cars/car-11.jpg"
+    ],
+    "sellerName": "Анна С.",
+    "sellerType": "private"
+  },
+  {
+    "id": "car-12",
+    "brand": "Hyundai",
+    "model": "Tucson",
+    "year": 2022,
+    "price": 3300000,
+    "mileage": 30000,
+    "bodyType": "SUV",
+    "engineType": "diesel",
+    "transmission": "automatic",
+    "drive": "awd",
+    "images": [
+      "/images/cars/car-12.jpg"
+    ],
+    "sellerName": "Хендай Групп",
+    "sellerType": "dealer"
+  }
+]

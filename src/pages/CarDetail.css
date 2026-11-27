@@ -1,0 +1,299 @@
+.detail {
+  padding: 24px 0 0;
+}
+
+.detail__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.detail__back:hover {
+  color: #fff;
+}
+
+.detail__title {
+  margin: 12px 0 24px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+/* Мобильный порядок: галерея, цена/продавец, характеристики, описание */
+.detail__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+
+.panel {
+  padding: 20px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.panel__title {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Галерея */
+.detail__main-image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--surface-sunken);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.detail__main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail__thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.detail__thumb {
+  width: 88px;
+  aspect-ratio: 4 / 3;
+  padding: 0;
+  overflow: hidden;
+  background: var(--surface-sunken);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.detail__thumb.is-active {
+  border-color: var(--accent);
+}
+
+.detail__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Боковая панель */
+.detail__side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail__price {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.detail__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail__btn,
+.detail__phone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Вторичные кнопки */
+.detail__btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.detail__btn:hover {
+  background: var(--surface-overlay);
+}
+
+.detail__btn.is-on {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Главная кнопка панели продавца */
+.detail__phone {
+  margin-top: 16px;
+  border: 0;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-weight: 700;
+}
+
+.detail__note {
+  margin: 12px 0 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.detail__seller-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.detail__seller-type {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+}
+
+/* Характеристики */
+.specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 0;
+}
+
+.specs__item {
+  padding: 14px;
+  background: var(--surface-base);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.specs__item dt {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.specs__item dd {
+  margin: 4px 0 0;
+  font-weight: 700;
+}
+
+.detail__desc p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* Похожие */
+.detail__similar {
+  margin-top: 48px;
+}
+
+.detail__similar-title {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.detail__similar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Не найдено */
+.detail__missing {
+  padding: 48px 24px;
+  text-align: center;
+  background: var(--surface-raised);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.detail__missing h1 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.detail__missing p {
+  margin: 0 0 20px;
+  color: var(--text-muted);
+}
+
+.detail__missing-link {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.detail__missing-link:hover {
+  background: var(--surface-overlay);
+}
+
+@media (min-width: 640px) {
+  .detail__actions {
+    flex-direction: row;
+  }
+
+  .specs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .detail__similar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .detail__title {
+    font-size: 36px;
+  }
+
+  .detail__layout {
+    grid-template-columns: minmax(0, 1fr) 340px;
+    grid-template-areas:
+      "gallery side"
+      "specs   side"
+      "desc    side";
+    align-items: start;
+  }
+
+  .detail__gallery {
+    grid-area: gallery;
+  }
+
+  .detail__specs {
+    grid-area: specs;
+  }
+
+  .detail__desc {
+    grid-area: desc;
+  }
+
+  .detail__side {
+    grid-area: side;
+    position: sticky;
+    top: 16px;
+  }
+
+  /* В узкой панели кнопки друг под другом */
+  .detail__actions {
+    flex-direction: column;
+  }
+
+  .detail__similar-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.detail__note--warn {
+  color: #ffb4a8;
+}

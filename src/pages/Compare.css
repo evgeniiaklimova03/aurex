@@ -1,0 +1,201 @@
+.compare {
+  padding: 32px 0 0;
+}
+
+.compare__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.compare__title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.compare__clear {
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.compare__clear:hover {
+  background: var(--surface-overlay);
+  color: #fff;
+}
+
+.compare__hint {
+  margin: 0 0 16px;
+  color: var(--text-muted);
+}
+
+/* Горизонтальная прокрутка на мобильных */
+.compare__scroll {
+  overflow-x: auto;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.compare__table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+}
+
+.compare__table th,
+.compare__table td {
+  padding: 14px 16px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border);
+}
+
+.compare__table tbody tr:last-child th,
+.compare__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Колонка с названиями характеристик */
+.compare__table tbody th,
+.compare__corner {
+  width: 140px;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 14px;
+  background: var(--surface-raised);
+}
+
+.compare__table tbody th {
+  position: sticky;
+  left: 0;
+}
+
+/* Шапка с машиной */
+.compare__car {
+  position: relative;
+  min-width: 200px;
+  font-weight: 700;
+}
+
+.compare__car img {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 4 / 3;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.compare__name {
+  color: #fff;
+  text-decoration: none;
+}
+
+.compare__name:hover {
+  text-decoration: underline;
+}
+
+.compare__remove {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(11, 12, 14, 0.7);
+  color: #fff;
+  cursor: pointer;
+}
+
+.compare__remove:hover {
+  color: var(--accent);
+}
+
+/* Значения: различаются — лайм, одинаковые — серые */
+.compare__table td.is-diff {
+  background: var(--accent-subtle);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.compare__table td.is-same {
+  color: var(--text-secondary);
+}
+
+.compare__legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.compare__swatch {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  background: var(--accent-subtle);
+}
+
+.compare__legend-gap {
+  width: 12px;
+}
+
+/* Пустое состояние */
+.compare__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 24px;
+  text-align: center;
+  color: var(--text-muted);
+  background: var(--surface-raised);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.compare__empty h1 {
+  margin: 16px 0 8px;
+  color: var(--text);
+  font-size: 24px;
+}
+
+.compare__empty p {
+  max-width: 420px;
+  margin: 0 0 24px;
+}
+
+.compare__cta {
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Скрыто визуально, но читается скринридерами */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
